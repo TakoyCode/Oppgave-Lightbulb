@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="lightBulb"></div>
+        <div class="LightBulbBase">
+            <button id="lightButton" onclick="turnOnLightBulb1()">On</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let IsLampOn = false;
+
+        function turnOnLightBulb1() {
+            IsLampOn = !IsLampOn
+
+            if (IsLampOn) {
+                document.getElementById('lightBulb').style.backgroundColor = 'yellow';
+                document.getElementById('lightButton').innerHTML = 'Off'
+            }
+            else {
+                document.getElementById('lightBulb').style.backgroundColor = 'gray';
+                document.getElementById('lightButton').innerHTML = 'On'
+            }
+
+        }
+
+        let lightBulbId = document.getElementById('lightBulb');
+        let ButtonId = document.getElementById('lightButton');
+
+        let color = 'gray';
+        let buttonText = 'Turn On';
+
+        function turnOnLightBulb2() {
+            IsLampOn = !IsLampOn
+
+            IsLampOn ? color = 'yellow' : color = 'gray '
+            IsLampOn ? buttonText = 'Off' : buttonText = 'On '
+
+            lightBulbId.style.backgroundColor = color;
+            ButtonId.innerHTML = buttonText;
+        }
+
+    </script>
+</body>
+
+</html>

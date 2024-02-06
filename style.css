@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+#lightBulb {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    z-index: 10;
+}
+
+.LightBulbBase {
+    background-color: rgb(85, 85, 85);
+    width: 50px;
+    height: 75px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 90px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
